@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Genie Recipes</title>
+    </head>
+    <body>
+        <h1>Home baby!</h1>
+        <img src= "../images/genie_rgb_1.jpg">
+        <a href="/add"> Add Recipes </a>
+        <h3>Recipes</h3>
+        <br>
+        <% recipes.forEach( o => { %>
+            <br><br><br>
+            <li> <%= o.name %></li>
+            <li> <%= o.desc %></li>
+            <li> <%= o.vurl %></li>
+            <li> <%= o.ninfo %></li>
+            <li> <%= o.img %></li>
+            <li> <%= o.squery %></li>
+        <% }); %>
+        <br>
+    </body>
+</html>

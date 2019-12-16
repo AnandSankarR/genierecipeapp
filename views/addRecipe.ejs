@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Genie Recipes</title>
+    </head>
+    <body>
+        <h1>Add Recipes</h1>
+        <form action="/add" method="POST">
+            Name of the recipe: <input type="text" name="rname">
+            <br>Tell us how to make this recipe? <br>
+            <textarea name="desc" rows="5" cols="30" wrap="hard">Tell us more about this recipe </textarea>
+            <br>Is there a youtube link to this recipe? <br>
+            <input type="url" name="vurl">
+            <br> Tell us little bit of nutrition: <br>
+            <textarea name="ninfo" rows="5" cols="30" wrap="hard">
+
+            </textarea>
+            <br>Recipe Image: <input type="file" name="image">
+            <br> Suggested Tags: <input type="text" name="squery">
+            <br> <input type="submit">
+        </form>
+    </body>
+</html>

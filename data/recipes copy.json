@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Broccoli tots",
+        "desc": "This is placeholder for description",
+        "vurl": "https://www.youtube.com/watch?v=PG0GVNN-rm4",
+        "ninfo": "This is placeholder for nutrient info",
+        "img" : "../images/broccoli1.jpg",
+        "squery": "broccoli"
+    },
+    {
+        "name": "Broccoli soup",
+        "desc": "This is placeholder for description-2",
+        "vurl": "https://www.youtube.com/watch?v=PG0GVNN-rm4",
+        "ninfo": "This is placeholder for nutrient info-2",
+        "img" : "../images/broccoli2.jpg",
+        "squery": "broccoli"
+    }
+]

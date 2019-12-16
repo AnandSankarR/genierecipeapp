@@ -1,0 +1,24 @@
+{
+  "name": "genierecipeapp",
+  "version": "1.0.0",
+  "description": "It is a webapp for smart recipes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnandSankarR/genierecipeapp.git"
+  },
+  "author": "asr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnandSankarR/genierecipeapp/issues"
+  },
+  "homepage": "https://github.com/AnandSankarR/genierecipeapp#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}
