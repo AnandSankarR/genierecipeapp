@@ -1,22 +1,67 @@
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Genie Recipes</title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+         <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+        <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
-        <h1>Home baby!</h1>
-        <img src= "../images/genie_rgb_1.jpg">
-        <a href="/add"> Add Recipes </a>
-        <h3>Recipes</h3>
-        <br>
-        <% recipes.forEach( o => { %>
-            <br><br><br>
-            <li> <%= o.name %></li>
-            <li> <%= o.desc %></li>
-            <li> <%= o.vurl %></li>
-            <li> <%= o.ninfo %></li>
-            <li> <%= o.img %></li>
-            <li> <%= o.squery %></li>
-        <% }); %>
-        <br>
+        <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container">
+            <div class="logo">
+                <a href="/"><img src="img/genie_rgb_1.jpg" alt="image 1"></a>
+            </div>
+            <div class="nav-menu">
+                <nav class="main-menu mobile-menu">
+                    <ul>
+                        <li class="active"><a href="/">Home</a></li>
+                        <li><a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="/add">Add New Recipes</a></li>
+                                <li><a href="/recipes">Recipe</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/recipes">Recipes</a></li>
+                        <li><a href="/add">Add New Recipes</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Recipe Section Begin -->
+    <section class="recipe-section spad">
+        <div class="container">
+            <div class="row">
+                <% for(i=0; i<3; i++ ) { %>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="recipe-item">
+                            <% var href_link = "/recipes/"+ (i+1); %>
+                            <a href=<%= href_link %> ><img src=<%= recipes[i].img %> alt="Pic"></a>
+                            <div class="ri-text">
+                                <div class="cat-name"><%= recipes[i].category %></div>
+                                <a href=<%= href_link %>>
+                                    <h4><%= recipes[i].name %></h4>
+                                </a>
+                                <p><%= recipes[i].desc %></p>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+        </div>
+        <a href="/recipes"> See All Recipes </a>
+        </div>
+    </section>
     </body>
 </html>

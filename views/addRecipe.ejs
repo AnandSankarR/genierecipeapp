@@ -1,22 +1,92 @@
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Genie Recipes</title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+         <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+        <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
-        <h1>Add Recipes</h1>
-        <form action="/add" method="POST">
-            Name of the recipe: <input type="text" name="rname">
-            <br>Tell us how to make this recipe? <br>
-            <textarea name="desc" rows="5" cols="30" wrap="hard">Tell us more about this recipe </textarea>
-            <br>Is there a youtube link to this recipe? <br>
-            <input type="url" name="vurl">
-            <br> Tell us little bit of nutrition: <br>
-            <textarea name="ninfo" rows="5" cols="30" wrap="hard">
-
-            </textarea>
-            <br>Recipe Image: <input type="file" name="image">
-            <br> Suggested Tags: <input type="text" name="squery">
-            <br> <input type="submit">
+         <!-- Header Section Begin -->
+    <header class="header-section-other">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="/"><img src="img/little_logo.jpg" alt=""></a>
+            </div>
+            <div class="nav-menu">
+                <nav class="main-menu mobile-menu">
+                    <ul>
+                        <li class="active"><a href="/">Home</a></li>
+                        <li><a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="/add">Add New Recipes</a></li>
+                                <li><a href="/search">Search</a></li>
+                                <li><a href="/recipes">Recipe</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/recipes">Recipes</a></li>
+                        <li><a href="/add">Add New Recipes</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+    
+    <!-- Hero Search Section Begin -->
+    <div class="hero-search set-bg" data-setbg="img/search-bg.jpg">
+        <div class="container">
+            <div class="filter-table">
+                <form action="/search" class="filter-search">
+                    <input type="text" id="rname" placeholder="Search recipe">
+                    <input type="text" id="squery" placeholder="Tags">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Search Section End -->
+    <div class="container">
+        <div class="blog-text">
+        <form action="/add" method="POST" class="comment-form">
+            <h3>Add Recipes</h3>
+            <div class="row">
+                <div class="col-lg-6">
+                    <input type="text" name="rname" placeholder="Recipe name">
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" name="category" placeholder="Recipe category">
+                </div>
+                <div class="col-lg-12">
+                    <textarea name="ingredients" placeholder="Ingredients needed for this recipe"></textarea>
+                </div>
+                <div class="col-lg-12">
+                    <textarea name="desc" placeholder="step-by-step recipe"></textarea>
+                </div>
+                <div class="col-lg-12">
+                    <textarea name="ninfo" placeholder="Nutrient Info"></textarea>
+                </div>
+                <div class="col-lg-6">
+                    <input type="url" name="vurl" placeholder="Youtube Video link">
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" name="squery" placeholder="Suggested tags">
+                </div>
+                <div class="col-lg-6">
+                    <input type="file" name="image" placeholder="Select recipe image">
+                </div>
+            </div>
+            <button type="submit">Post</button>
         </form>
+        </div>
+    </div>
     </body>
 </html>

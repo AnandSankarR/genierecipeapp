@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Genie Recipes</title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+         <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+        <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+    <!-- Header Section Begin -->
+    <header class="header-section-other">
+        <div class="container-fluid">
+            <div class="logo">
+                <a href="/"><img src="img/little_logo.jpg" alt=""></a>
+            </div>
+            <div class="nav-menu">
+                <nav class="main-menu mobile-menu">
+                    <ul>
+                        <li class="active"><a href="/">Home</a></li>
+                        <li><a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="/add">Add New Recipes</a></li>
+                                <li><a href="/search">Search</a></li>
+                                <li><a href="/recipes">Recipe</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/recipes">Recipes</a></li>
+                        <li><a href="/add">Add New Recipes</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+    
+    <!-- Hero Search Section Begin -->
+    <div class="hero-search set-bg" data-setbg="img/search-bg.jpg">
+        <div class="container">
+            <div class="filter-table">
+                <form action="/search" class="filter-search">
+                    <input type="text" id="rname" placeholder="Search recipe">
+                    <input type="text" id="squery" placeholder="Tags">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Search Section End -->
+
+     <!-- Recipe Section Begin -->
+     <section class="recipe-section spad">
+        <div class="container">
+            <div class="row">
+                <% recipes.forEach((o,idx) => { %>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="recipe-item">
+                            <% var href_link = "/recipes/"+ (idx+1); %>
+                            <a href=<%= href_link %> ><img src=<%= o.img %> alt="Pic"></a>
+                            <div class="ri-text">
+                                <div class="cat-name"><%= o.category %></div>
+                                <a href=<%= href_link %>>
+                                    <h4><%= o.name %></h4>
+                                </a>
+                                <p><%= o.desc %></p>
+                            </div>
+                        </div>
+                    </div>
+                <% }); %>
+        </div>
+        <a href="/recipes"> Clear search </a>
+        </div>
+    </section>
+    </body>
+    </html>
