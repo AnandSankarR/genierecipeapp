@@ -45,7 +45,7 @@ app.get('/search', function(req, res){
 });
 
 app.get('/recipes/:id', function(req, res){
-    console.log("return recipe with the ID:" + req.params.id);
+    //console.log("return recipe with the ID:" + req.params.id);
     var idx= (req.params.id) - 1;
     var recipe = jsonData[idx];
     res.render("recipe", {recipe: recipe});
@@ -72,6 +72,7 @@ app.post('/add', function(req,res){
         vurl: req.body.vurl,
         ninfo: req.body.ninfo,
         img: req.body.image,
+        instruction:req.body.instruction,
         squery: req.body.squery
     }
     fs.readFile('./data/recipes.json', function(err,data) {
@@ -84,5 +85,5 @@ app.post('/add', function(req,res){
             console.log('Done!');
         });
     });
-    res.render("postsubmit", {name: req.body.rname, message: "Added Recipe:"});
+    res.render("postsubmit", {name: req.body.rname, message: "Added Recipe:" + req.body.rname});
 });

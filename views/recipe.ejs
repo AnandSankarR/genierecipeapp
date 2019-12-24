@@ -7,18 +7,18 @@
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
 
         <!-- Css Styles -->
-        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-        <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-        <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="/css/nice-select.css" type="text/css">
+        <link rel="stylesheet" href="/css/slicknav.min.css" type="text/css">
+        <link rel="stylesheet" href="/css/style.css" type="text/css">
     </head>
     <body>
     <!-- Header Section Begin -->
     <header class="header-section-other">
         <div class="container-fluid">
             <div class="logo">
-                <a href="/"><img src="img/little_logo.jpg" alt=""></a>
+                <a href="/"><img src="/img/little_logo.jpg" alt=""></a>
             </div>
             <div class="nav-menu">
                 <nav class="main-menu mobile-menu">
@@ -27,7 +27,7 @@
                         <li><a href="#">Pages</a>
                             <ul class="sub-menu">
                                 <li><a href="/add">Add New Recipes</a></li>
-                                <li><a href="/search">Search</a></li>
+
                                 <li><a href="/recipes">Recipe</a></li>
                             </ul>
                         </li>
@@ -41,38 +41,97 @@
     </header>
     <!-- Header End -->
     
-    <!-- Hero Search Section Begin -->
-    <div class="hero-search set-bg" data-setbg="img/search-bg.jpg">
+    <!-- Search Section Begin -->
+    <div class="hero-search set-bg" data-setbg="/img/search-bg.jpg">
         <div class="container">
             <div class="filter-table">
                 <form action="/search" class="filter-search" method="GET">
-                    <input type="text" name="rname" placeholder="Search recipe">
-                    <input type="text" name="squery" placeholder="Tags">
+
+                    <input type="text" name="squery" placeholder="Search Recipes using Tags">
                     <button type="submit">Search</button>
                 </form>
             </div>
         </div>
     </div>
-    <!-- Hero Search Section End -->
+    <!--Search Section End -->
+
     <section class="single-page-recipe spad">
         <div class="recipe-top">
             <div class="container-fluid">
                 <div class="recipe-title">
-                    <h2><%=recipe.rname %></h2>
+                    <h2><%=recipe.name %></h2>
                     <ul class="tags">
-                        <li>Tags</li>
+                        <% var catList = recipe.category.split(",");
+                            catList.forEach((o) => { %>
+                        <li><%= o %></li>
+                        <% }); %>
                     </ul>
                 </div>
-                <img src=<%= recipe.img %> alt="">
+                    <img src=<%= recipe.img %> class="stretch">
             </div>
         </div>
-        <div class="col-lg-7">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="ingredients-item">
+                        <div class="intro-item">
+                            <img src="/img/intro-img.jpg" alt="">
+                            <h2><%=recipe.name %></h2>
+                        </div>
+                        <div class="ingredient-list">
+                            <div class="list-item">
+                                <h5>Ingredients</h5>
+                                <div class="salad-list">
+                                    <h6>For the <%=recipe.name %></h6>
+                                    <ul>
+                                        <% var ingList = recipe.ingredients.split(",");
+                                    ingList.forEach((o) => { %>
+                                        <li><%=o%></li> 
+                                        <% }); %>
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nutrition-fact">
+                            <div class="nutri-title">
+                                <h6>Nutrition Facts</h6>
+                                <span>Serves 4</span>
+                            </div>
+                            <ul>
+                                <% var nList = recipe.ninfo.split(",");
+                                    nList.forEach((o) => { %>
+                               
+                                    <li><%=o%></li>
+                                
+                                <% }); %>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
             <div class="recipe-right">
                 <div class="recipe-desc">
                     <h3>Description</h3>
                     <p><%= recipe.desc %></p>
                 </div>
+                <div class="instruction-list">
+                    <h3>Instructions</h3>
+                    <ul>
+                        <% var insList = recipe.instruction.split("\r\n");
+                           insList.forEach((o, idx) => { %>
+                        <li>
+                            <span>
+                                <%= idx+1 %>
+                            </span>
+                            <%= o %>
+                        </li>
+                        <% }); %>
+                    </ul>
             </div>
+        </div>
+        </div>
+        </div>
         </div>
     </section>
 

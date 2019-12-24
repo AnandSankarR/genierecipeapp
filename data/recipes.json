@@ -1,1 +1,46 @@
-[{"name":"Broccoli tots","category":"Healthy Snack","ingredients":"Broccoli, Potatoes","desc":"This is placeholder for description","vurl":"https://www.youtube.com/watch?v=PG0GVNN-rm4","ninfo":"This is placeholder for nutrient info","img":"img/broccoli1.jpg","squery":"broccoli"},{"name":"Broccoli soup","category":"Soup","ingredients":"Broccoli, Heavy cream","desc":"This is placeholder for description-2","vurl":"https://www.youtube.com/watch?v=PG0GVNN-rm4","ninfo":"This is placeholder for nutrient info-2","img":"img/broccoli2.jpg","squery":"broccoli"},{"name":"HOT DOG GRILLED CHEESE RECIPE","category":"Sandwich","ingredients":"1 tablespoon butter, softened\r\n1 hot dog bun\r\n2 slices American cheese, cheddar, or a mix of both\r\n1 hot dog, split in half lengthwise\r\nCondiments of choice","desc":"Heat a nonstick skillet over medium-low. Place the split hot dog on one side. Split the bun and butter it evenly on both sides. Place it on the other end of the skillet, cut side facing down. Flatten it slightly with a spatula and cook until golden, about 2 minutes.\r\nFlip bun and place cheeses on the top. Transfer the hot dog to one side of the bun.\r\nRemove from heat when cheeses melt. Top hot dog with ketchup, mustard, or whatever you like. Close the bun and enjoy!","vurl":"https://www.facebook.com/Thrillist/videos/10153606300580891/","ninfo":"N/A","img":"Devi_Photo.jpg","squery":"Sandwich"},{"name":"Classic Hash Browns","category":"Breakfast","ingredients":"2 russet potatoes, peeled\r\nRusset Potatoes, 5 lb\r\n3 tablespoons clarified buttersalt and ground black pepper to taste1 pinch cayenne pepper, or to taste1 pinch paprika, or to taste","desc":"Shred potatoes into a large bowl filled with cold water. Stir until water is cloudy, drain, and cover potatoes again with fresh cold water. Stir again to dissolve excess starch. Drain potatoes well, pat dry with paper towels, and squeeze out any excess moisture. Watch Now\r\nHeat clarified butter in a large non-stick pan over medium heat. Sprinkle shredded potatoes into the hot butter and season with salt, black pepper, cayenne pepper, and paprika. Watch Now\r\nCook potatoes until a brown crust forms on the bottom, about 5 minutes. Continue to cook and stir until potatoes are browned all over, about 5 more minutes. Watch Now","vurl":"https://www.allrecipes.com/video/569/how-to-make-classic-hash-browns/","ninfo":"334 cal","img":"Anand_Photo.jpeg","squery":"Breakfast, Potatoes"},{"name":"sa","category":"sa","ingredients":"sa","desc":"sa","vurl":"","ninfo":"sa","img":"","squery":""}]
+[ 
+    { 
+        "name":"BEST FLUFFY PANCAKES",
+        "category":"Bread, Breakfast",
+        "ingredients":"2 cups all purpose | plain flour, 1/4 cup granulated sugar or sweetener, 4 teaspoons baking powder,1/4 teaspoon baking soda ,1/2 teaspoon salt,1 1/2 cups milk (plus up to 1/4 cup extra if needed), 1/4 cup butter | melted ,2 teaspoons pure vanilla extract,1 large egg",
+        "desc":"Look no further because a steaming stack of perfectly soft, Best Fluffy Pancakes are right here! Weekends will never be the same again!",
+        "vurl":"https://www.facebook.com/Thrillist/videos/10153606300580891/",
+        "ninfo":"Calories: 156kcal,Carbohydrates: 22g,Protein: 3g,Fat: 5g,Saturated Fat: 3g,Cholesterol: 27mg,Sodium: 152mg,Potassium: 208mg,Sugar: 6g,Vitamin A: 195IU,Calcium: 104mg, Iron: 1.1mg",
+        "img":"/img/recipe-single.jpg",
+        "instruction":"Combine together the flour, sugar (or sweetener), baking powder, baking soda and salt in a large-sized bowl. Make a well in the centre and add the milk, slightly cooled melted butter, vanilla and egg.\r\n Use a wire whisk to whisk the wet ingredients together first before slowly folding them into the dry ingredients. Mix together until smooth (there may be a couple of lumps but that's okay).\r\n (The batter will be thick and creamy in consistency. If you find the batter too thick -- doesn't pour off the ladle or out of the measuring cup smoothly -- fold a couple tablespoons of extra milk into the batter at a time until reaching desired consistency). \r\nSet the batter aside and allow to rest while heating up your pan or griddle. \r\nHeat a nonstick pan or griddle over low-medium heat and wipe over with a little butter to lightly grease pan. Pour ¼ cup of batter onto the pan and spread out gently into a round shape with the back of your ladle or measuring cup.\r\nWhen the underside is golden and bubbles begin to appear on the surface, flip with a spatula and cook until golden. Repeat with remaining batter.\r\nServe with honey, maple syrup, fruit, ice cream or frozen yoghurt, or enjoy plain!",
+        "squery":"Sandwich"
+     },
+    { 
+       "name":"HOT DOG GRILLED CHEESE RECIPE",
+       "category":"Sandwich, Breakfast, vegan",
+       "ingredients":"1 tablespoon butter, softened\r\n1 hot dog bun\r\n2 slices American cheese, cheddar, or a mix of both\r\n1 hot dog, split in half lengthwise\r\nCondiments of choice",
+       "desc":"Grilled Cheese Hot Dogs are a super fun and tasty combination of 2 classics- Grilled Cheese and Hot Dogs. A buttery, crispy hot dog bun encases a grilled hot dog with lots of melty cheese and crispy bacon. Lunch doesn’t get any better than this!",
+       "vurl":"https://www.facebook.com/Thrillist/videos/10153606300580891/",
+       "ninfo":"Total Fat : 20.5g, Cholestrol : 2%, Calories : 345",
+       "img":"/img/recipe-1.jpg",
+       "instruction":"Heat a nonstick skillet over medium-low. Place the split hot dog on one side. Split the bun and butter it evenly on both sides. Place it on the other end of the skillet, cut side facing down. Flatten it slightly with a spatula and cook until golden, about 2 minutes.\r\nFlip bun and place cheeses on the top. Transfer the hot dog to one side of the bun.\r\nRemove from heat when cheeses melt. Top hot dog with ketchup, mustard, or whatever you like. Close the bun and enjoy!",
+       "squery":"Sandwich"
+    },
+    { 
+       "name":"Classic Hash Browns",
+       "category":"Breakfast",
+       "ingredients":"2 russet potatoes, peeled\r\nRusset Potatoes, 5 lb\r\n3 tablespoons clarified buttersalt and ground black pepper to taste1 pinch cayenne pepper, or to taste1 pinch paprika, or to taste",
+       "desc":"Hash browns, a classic breakfast or side dish recipe, made with simple ingredients, in less than 30 minutes. They’re so delicious and super crispy!",
+       "vurl":"https://www.allrecipes.com/video/569/how-to-make-classic-hash-browns/",
+       "ninfo":"334 cal",
+       "img":"/img/recipe-2.jpg",
+       "instruction":"Shred potatoes into a large bowl filled with cold water. Stir until water is cloudy, drain, and cover potatoes again with fresh cold water. Stir again to dissolve excess starch. Drain potatoes well, pat dry with paper towels, and squeeze out any excess moisture. Watch Now\r\nHeat clarified butter in a large non-stick pan over medium heat. Sprinkle shredded potatoes into the hot butter and season with salt, black pepper, cayenne pepper, and paprika. Watch Now\r\nCook potatoes until a brown crust forms on the bottom, about 5 minutes. Continue to cook and stir until potatoes are browned all over, about 5 more minutes. Watch Now",
+       "squery":"Breakfast, Potatoes"
+    },
+    { 
+       "name":"Easy Grilled Chicken Breast",
+       "category":"Brunch,dinner,chicken",
+       "ingredients":"1/3 cup oil olive oil or vegetable oil, 1/4 cup cider vinegar (or red wine vinegar),2 tablespoons dijon mustard,3 tablespoons Worcestershire sauce,2 tablespoons lemon juice,1 tablespoon salt,1 tablespoon pepper,2 tablespoons Italian seasoning,1 teaspoon garlic powder,1 tablespoon sugar,4 boneless skinless chicken breasts",
+       "desc":"Grilled Chicken Breast is the perfect meal!  It’s great added to pasta, put on top of a salad or served with a side of zucchini salad and corn on the cob on a hot summer evening! This easy, healthy recipe produces tender and plump marinated chicken breasts that are grilled to golden perfection.\r\nGrilled Chicken is one of our favorite meals! With a quick marinade and an even quicker grill time, you can have a meal on the table in no time at all!\r\n",
+       "vurl":"https://youtu.be/_zk0SHoKDd4",
+       "ninfo":"800 calories per serving, Protein 25g",
+       "img":"/img/recipe-3.jpg",
+       "instruction":"Combine all ingredients in a bowl or freezer bag. Add chicken and toss well to combine.\r\n Marinade for a 30 minutes (or up to 4 hours) before cooking chicken.\r\nPreheat grill to medium high heat.\r\nPlace chicken on the grill for 7-8 minutes. Flip over and cook an additional 7-8 minutes or until no pink remains and chicken reaches 165°F.\r\nRest 3-5 minutes before slicing.",
+       "squery":"brunch,dinner,chicken"
+    }
+ ]
